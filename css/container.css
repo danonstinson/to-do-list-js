@@ -1,0 +1,28 @@
+.container {
+    background-color: white;
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container__item {
+    display: grid;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    justify-content: stretch;
+}
+
+.container__item--decoration {
+    border-bottom: 7px solid gainsboro;
+}
+
+.container__form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    justify-content: stretch;
+    grid-gap: 10px;
+}
+
+.container__item--header {
+    background-color: gainsboro;
+}

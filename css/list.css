@@ -1,0 +1,14 @@
+.list__item {
+    list-style: none;
+    border-bottom: 2px solid gainsboro;
+    padding: 5px;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+
+}
+
+.list {
+    padding-left: 0px;
+}
