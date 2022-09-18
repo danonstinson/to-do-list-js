@@ -11,15 +11,9 @@
 	];
 
 	const clearInput = () => {
-		const button = document.getElementById("button");
-		button.addEventListener("click", (event) => {
-			event.preventDefault();
-
-			const inputField = document.getElementById("inputField");
-			inputField.value = "";
-		})
+		const inputField = document.getElementById("inputField");
+		inputField.value = "";
 	};
-	clearInput();
 
 	const addNewTask = (newTaskContent) => {
 
@@ -73,9 +67,9 @@
            	 	<li
 					class="list__item ${task.done ? " list__item--done" : ""}"
 					>
-           	 		<button class="js-done">zrobione?</button>
+           	 		<button class="js-done css-done">zrobione?</button>
 					${task.content}
-           	 		<button class="js-remove">usuń</button>
+           	 		<button class="js-remove css-remove">usuń</button>
             	</li>
             `;
 		}
@@ -95,6 +89,7 @@
 		}
 
 		addNewTask(newTaskContent);
+		clearInput();
 	};
 
 	const init = () => {
