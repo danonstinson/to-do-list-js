@@ -1,14 +1,36 @@
-.list__item {
-    list-style: none;
+.list {
     border-bottom: 2px solid gainsboro;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 5px;
+}
+
+.list__item {
     padding: 5px;
 }
 
 .list__item--done {
     text-decoration: line-through;
-
 }
 
-.list {
+.section__list {
     padding-left: 0px;
+}
+
+.list__button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    font-weight: bold;
+    color: white;
+}
+
+.list__button--done {
+    background-color: green;
+}
+
+.list__button--remove {
+    background-color: red;
 }

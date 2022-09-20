@@ -6,10 +6,8 @@
 }
 
 .container__item {
-    display: grid;
     border: 1px solid gainsboro;
     padding: 10px;
-    justify-content: stretch;
 }
 
 .container__item--decoration {
@@ -23,6 +21,9 @@
     grid-gap: 10px;
 }
 
-.container__item--header {
-    background-color: gainsboro;
+@media (max-width: 767px) {
+    .container__form {
+        grid-template-columns: 1fr;
+        ;
+    }
 }

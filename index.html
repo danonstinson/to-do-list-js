@@ -19,26 +19,22 @@
 </head>
 
 <body class="body">
-    <section>
-        <div class="section__header section__header--decoration">
-            <h1>Lista zdań</h1>
+    <h1 class="header">Lista zadań</h1>
+    <section class="container">
+        <div class="container__item">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
         </div>
-        <div class="container">
-            <div class="container__item">
-                <h2 class="section__header">Dodaj nowe zadanie</h2>
-            </div>
-            <div class="container__item container__item--decoration">
-                <form class="js-form container__form">
-                    <input id="inputField" class="js-newTask inputField" placeholder="Co jest do zrobienia?">
-                    <button id="button" class="button">Dodaj zadanie</button>
-                </form>
-            </div>
-            <div class="container__item">
-                <h2 class="section__header">Lista zadań</h2>
-            </div>
-            <div class="container__item">
-                <ul class="js-tasks list"></ul>
-            </div>
+        <div class="container__item container__item--decoration">
+            <form class="js-form container__form">
+                <input id="inputField" class="js-newTask inputField" placeholder="Co jest do zrobienia?" auto>
+                <button id="button" class="button">Dodaj zadanie</button>
+            </form>
+        </div>
+        <div class="container__item">
+            <h2 class="section__header">Lista zadań</h2>
+        </div>
+        <div class="container__item">
+            <ul class="js-tasks section__list"></ul>
         </div>
     </section>
 </body>

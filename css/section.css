@@ -1,14 +1,16 @@
 .body {
     font-family: lato, sans-serif;
     background-color: gainsboro;
+    margin: 30px 0px;
+}
+
+.header {
+    font-weight: bold;
+    margin: 15px 50px;
 }
 
 .section__header {
-    font-weight: bold;
-}
-
-.section__header--decoration {
-    margin: 0 50px;
+    font-weight: bold
 }
 
 .button {
