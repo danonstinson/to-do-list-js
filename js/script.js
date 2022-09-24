@@ -11,7 +11,7 @@
     ];
 
     const clearInput = () => {
-        const inputField = document.getElementById("inputField");
+        const inputField = document.getElementById("input");
         inputField.value = "";
     };
 
@@ -53,7 +53,7 @@
 
         const onClickFocus = () => {
             document.getElementById("button").addEventListener("click", () => {
-                document.getElementById("inputField").focus();
+                document.getElementById("input").focus();
             })
         };
         onClickFocus();
