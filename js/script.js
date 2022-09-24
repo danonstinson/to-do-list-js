@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "pobiegać",
-            done: false,
-        },
-        {
-            content: "zrobić lekcję",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const clearInput = () => {
         const inputField = document.getElementById("input");
