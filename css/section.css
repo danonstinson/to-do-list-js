@@ -21,10 +21,17 @@
     border: none;
     padding: 8px
 }
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__button:active {
+    border: 2px solid black;
+}
 
 .form {
     display: grid;
-    grid-template-columns: 1fr 120px;
+    grid-template-columns: 1fr auto;
     justify-content: stretch;
     grid-gap: 10px;
 }
