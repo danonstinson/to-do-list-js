@@ -1,29 +1,14 @@
+.body {
+    font-family: lato, sans-serif;
+    background-color: gainsboro;
+    margin: 0px auto;
+    max-width: 800px;
+}
+
 .container {
-    background-color: white;
     margin: 0 50px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
 }
 
-.container__item {
-    border: 1px solid gainsboro;
-    padding: 10px;
-}
-
-.container__item--decoration {
-    border-bottom: 7px solid gainsboro;
-}
-
-.container__form {
-    display: grid;
-    grid-template-columns: 1fr 120px;
-    justify-content: stretch;
-    grid-gap: 10px;
-}
-
-@media (max-width: 767px) {
-    .container__form {
-        grid-template-columns: 1fr;
-        ;
-    }
+.header {
+    font-weight: bold;
 }
