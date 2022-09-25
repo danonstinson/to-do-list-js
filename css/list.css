@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 5px;
+    word-break: break-all;
 }
 
 .list__item {
