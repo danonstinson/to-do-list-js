@@ -4,7 +4,7 @@
 
 https://danonstinson.github.io/to-do-list-js/
 
-![TO-DO-LIST](images/how-it-works.gif)
+![TO-DO-LIST](images/how-it-works2.gif)
 
 ## Description
 
