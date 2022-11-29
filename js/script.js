@@ -2,6 +2,7 @@
     let tasks = [];
     let hideDoneTasks = false;
 
+   
     const clearInput = () => {
         const inputField = document.getElementById("input");
         inputField.value = "";
@@ -65,7 +66,7 @@
 
         for (const task of tasks) {
             htmlString += `
-                <li class="list">
+                <li class="list${task.done && hideDoneTasks === true ? "list--hidden" : ""}">
                     <button class="js-done list__button list__button--done">
                         ${task.done ? "✓" : ""}
                     </button>
@@ -82,13 +83,46 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
 
-    const renderButtons = () => { };
+    const renderHideDoneButton = () => {
+        let htmlHideDoneString = "";
+
+        if (tasks.length !== 0) {
+            htmlHideDoneString += `
+                <button class="js-hideShowDone">
+                ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+                </button>
+            `;
+        }
+
+        else {
+            htmlHideDoneString += "";
+        }
+
+        document.querySelector(".js-hideDone").innerHTML = htmlHideDoneString;
+    };
+
+    const renderSetAllDoneButton = () => {
+        let htmlSetTasksDoneString = "";
+
+        if (tasks.length !== 0) {
+            htmlSetTasksDoneString += `
+                <button class="js-markAllDone" ${tasks.every(({ done }) => done) ? "disable" : ""}>Ukończ wszystkie
+                </button>`;
+        }
+
+        else {
+            htmlSetTasksDoneString += "";
+        }
+
+        document.querySelector(".js-allDone").innerHTML = htmlSetTasksDoneString;
+    };
 
     const bindButtonsEvents = () => { };
 
     const render = () => {
         renderTasks();
-        renderButtons();
+        renderHideDoneButton();
+        renderSetAllDoneButton();
 
         bindEvents();
         bindButtonsEvents();
@@ -116,4 +150,4 @@
     };
 
     init();
-}
+};
