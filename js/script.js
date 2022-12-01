@@ -102,7 +102,7 @@
 
         if (tasks.length !== 0) {
             htmlHideDoneString += `
-                <button class="js-hideShowDone">
+                <button class="js-hideShowDone task__button tools__button">
                 ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
                 </button>
             `;
@@ -120,7 +120,7 @@
 
         if (tasks.length !== 0) {
             htmlSetTasksDoneString += `
-                <button class="js-markAllDone" ${tasks.every(({ done }) => done) ? "disable" : ""}>Ukończ wszystkie
+                <button class="js-markAllDone task__button tools__button" ${tasks.every(({ done }) => done) ? "disabled" : ""} >Ukończ wszystkie
                 </button>`;
         }
 

@@ -40,6 +40,16 @@
     background-color: green;
 }
 
+.list__button--done:hover {
+    background-color: hsl(120, 100%, 30%);
+    transition: 0.5s;
+}
+
 .list__button--remove {
     background-color: red;
+}
+
+.list__button--remove:hover {
+    background-color: hsl(0, 100%, 65%);
+    transition: 0.5s;
 }
