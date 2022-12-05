@@ -25,6 +25,7 @@
     background-color: hsl(180, 100%, 30%);
     transform: scale(1.15);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
