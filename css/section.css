@@ -27,6 +27,12 @@
     transition: 0.5s;
 }
 
+@media (max-width: 767px) {
+    .form__button:hover {
+        transform: scale(1.05);
+    }
+}
+
 .form__button:active {
     border: 2px solid black;
 }
@@ -41,7 +47,6 @@
 @media (max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
-        ;
     }
 }
 
@@ -82,11 +87,15 @@
 }
 
 .tools__button {
-    background-color: white;
+    background-color: transparent;
     color: teal;
     border: none;
 }
 
 .tools__button:hover {
     color: hsl(180, 100%, 35%);
+}
+
+.tools__button:disabled {
+    color: #ccc;
 }
